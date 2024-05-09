@@ -1,0 +1,14 @@
+{
+  "name": "exrp-upgrade-testutil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./src/build-genesis.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "big-json": "^3.2.0"
+  }
+}

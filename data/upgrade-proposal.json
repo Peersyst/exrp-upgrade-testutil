@@ -1,0 +1,15 @@
+{
+  "messages": [
+    {
+      "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "plan": {
+        "name": "v2.0.0",
+        "height": "8046890",
+        "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0-rc.2/exrp_2.0.0-rc.2_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0-rc.2/exrp_2.0.0-rc.2_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0-rc.2/exrp_2.0.0-rc.2_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0-rc.2/exrp_2.0.0-rc.2_Darwin_arm64.tar.gz\"}}"
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "1xrp"
+}
