@@ -7,6 +7,7 @@ binaries.json
 /data/node-0/config/genesis.json
 !/data/node-0/data/priv_validator_state.json
 /data/node-0/cosmovisor/
+/data/node-0/data-*
 
 # Genesis state
 /data/genesis-state.json
