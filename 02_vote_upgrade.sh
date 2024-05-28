@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DEFAULT_NODE_HOME=$PWD/data/node-0
-PROPOSAL_ID=36
+PROPOSAL_ID=37
 CONTAINER_NAME=validator
 
 CUSTOM_DOCKER_FLAGS="--platform linux/amd64"
