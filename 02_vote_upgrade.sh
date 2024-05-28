@@ -14,8 +14,8 @@ export -f exrpd
 # Copy the upgrade-proposal.json file inside the container
 docker cp data/upgrade-proposal.json $CONTAINER_NAME:/root/upgrade-proposal.json
 
-exrpd tx gov submit-proposal /root/upgrade-proposal.json --from alice --gas-prices 7axrp --yes --gas 300000
+exrpd tx gov submit-proposal /root/upgrade-proposal.json --from alice --gas-prices 800000000000axrp --gas 400000 --yes --gas 300000
 sleep 10
-exrpd tx gov vote $PROPOSAL_ID yes --from alice --gas-prices 7axrp --yes
+exrpd tx gov vote $PROPOSAL_ID yes --from alice --gas-prices 800000000000axrp --yes
 sleep 60
 exrpd query gov proposals
