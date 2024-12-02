@@ -15,8 +15,8 @@ const VALIDATOR_CONS_PUB_KEY = {
     "key": "vf/n1Yy7GYZ6IymjfjEhJL0SrRqBF5Ns3dhAxHXAkQU="
 };
 const VALIDATOR_ID = "FBCBDC739CF099E9F841ACC2E036538F6780C939";
-const XRP_SUPPLY = "99999959357452400167576028681";
-const HISTORICAL_REWARDS = 66;
+const XRP_SUPPLY = "99999921398960958904223056972";
+const HISTORICAL_REWARDS = 83;
 
 const GOV_VOTING_PERIOD = "60s";
 const GOV_MIN_DEPOSIT = {
@@ -39,11 +39,21 @@ parseStream.on('data', function(pojo) {
 readStream.pipe(parseStream);
 
 const f = (gs) => {
+    console.log(Object.keys(gs));
+    console.log(Object.keys(gs.app_state));
+    console.log(gs.app_state.params);
+    console.log(JSON.stringify(gs.app_state.ibc, null, 4));
+    gs.app_state.ibc.client_genesis.params.allowed_clients = [
+        "06-solomachine",
+        "07-tendermint",
+        "09-localhost"
+    ];
+    // gs.consensus_params.block.time_iota_ms = '1';
     /**
      * GOV
      */
-    gs.app_state.gov.deposit_params.min_deposit = [GOV_MIN_DEPOSIT];
-    gs.app_state.gov.voting_params.voting_period = GOV_VOTING_PERIOD;
+    gs.app_state.gov.params.min_deposit = [GOV_MIN_DEPOSIT];
+    gs.app_state.gov.params.voting_period = GOV_VOTING_PERIOD;
 
     /**
      * AUTH

@@ -4,12 +4,14 @@
       "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
       "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
       "plan": {
-        "name": "v2.0.0",
-        "height": "8728054",
-        "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0/exrp_2.0.0_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0/exrp_2.0.0_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0/exrp_2.0.0_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/Peersyst/exrp/releases/download/v2.0.0/exrp_2.0.0_Darwin_arm64.tar.gz\"}}"
+        "name": "v%VERSION%",
+        "height": "12551580",
+        "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/Peersyst/exrp/releases/download/v%VERSION%/node_%VERSION%_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/Peersyst/exrp/releases/download/v%VERSION%/node_%VERSION%_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/Peersyst/exrp/releases/download/v%VERSION%/node_%VERSION%_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/Peersyst/exrp/releases/download/v%VERSION%/node_%VERSION%_Darwin_arm64.tar.gz\"}}"
       }
     }
   ],
+  "title": "Protocol upgrade to v%VERSION%",
+  "summary": "This proposal will execute a protocol upgrade to the version %VERSION% (https://github.com/xrplevm/node/releases/tag/v%VERSION%)",
   "metadata": "ipfs://QmRWbE8bibBjtacYaaJ1suRpxFiHuYCD1T4Uz6QV27GXKH",
   "deposit": "50000000000000000000axrp"
 }
